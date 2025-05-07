@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página de Vendas</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #FFD700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
+
+    header {
+      padding-top: 20px;
+    }
+
+    header img {
+      width: 120px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 3.5em;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 10px 0 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #timer {
+      font-size: 2.2em;
+      font-weight: bold;
+      margin: 20px auto;
+      color: #000;
+      background: linear-gradient(45deg, #FFD700, #e6c200);
+      padding: 10px 20px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+    }
+
+    .imagem-container {
+      position: relative;
+      max-width: 300px;
+      margin: 30px auto 10px;
+    }
+
+    .imagem-direita {
+      width: 100%;
+      border-radius: 15px;
+      filter: blur(5px);
+    }
+
+    .cadeado {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 4px;
+      border-radius: 50%;
+    }
+
+    .preco {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+
+    .preco-original {
+      text-decoration: line-through;
+      color: #aaa;
+      margin-right: 10px;
+    }
+
+    .preco-desconto {
+      color: #FFD700;
+      font-weight: bold;
+      font-size: 1.7em;
+    }
+
+    .texto-centralizado {
+      max-width: 600px;
+      margin: 30px auto;
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 1.7;
+    }
+
+    .texto-centralizado h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    .botao-venda {
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      padding: 25px 60px;
+      font-size: 24px;
+      color: #000;
+      background: linear-gradient(45deg, #FFD700, #e6c200);
+      border: none;
+      border-radius: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+      transition: all 0.3s ease;
+      margin-top: 30px;
+    }
+
+    .botao-venda:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 35px rgba(255, 215, 0, 0.6);
+    }
+
+    .botao-venda svg {
+      width: 28px;
+      height: 28px;
+      fill: #000;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-leao.png.png" alt="Logo" />
+  </header>
+
+  <h1>Bem-vindo!</h1>
+  <p>Você está a um clique de uma oportunidade incrível.</p>
+
+  <div id="timer">05:00</div>
+
+  <div class="imagem-container">
+    <div class="cadeado">
+      <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="20" fill="#ccc">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-7h-1V7a5 5 0 0 0-10 0v3H6c-1.1 0-2 .9-2 
+                 2v9c0 1.1.9 2 2 2h12c1.1 0 2-.9 
+                 2-2v-9c0-1.1-.9-2-2-2zM8 7a4 4 0 0 1 
+                 8 0v3H8V7zm10 14H6v-9h12v9z"/>
+      </svg>
+    </div>
+    <img src="png.jpg" alt="Produto" class="imagem-direita" />
+    <p class="preco">
+      <span class="preco-original">R$ 59.99</span>
+      <span class="preco-desconto">R$ 29,90</span>
+    </p>
+  </div>
+
+  <div class="texto-centralizado">
+    <h2>🚀 O que você vai aprender:</h2>
+    <p>
+      ✔️ Aumente sua produtividade<br>
+      ✔️ Elimine distrações<br>
+      ✔️ Tome decisões com clareza<br>
+      ✔️ Use ferramentas como Técnica STOP, Roda das Emoções<br>
+      ✔️ Crie metas SMART e um plano de ação personalizado
+    </p>
+    <p>
+      📈 Ideal para estudantes, empreendedores e líderes!
+    </p>
+    <a href="https://sualoja.com/pagina-de-vendas" class="botao-venda">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10
+                 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zM7.16
+                 14.26l.03-.12L7.9 12h8.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49-.03-.03A1
+                 1 0 0 0 21 4H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52
+                 14.37 5.48 16 7 16h12v-2H7.42c-.14 0-.25-.11-.26-.24z"/>
+      </svg>
+      Ir para a Página de Vendas
+    </a>
+  </div>
+
+  <footer>&copy; 2025 - Sua Marca</footer>
+
+  <script>
+    let duration = 5 * 60;
+    let timerDisplay = document.getElementById("timer");
+
+    function updateTimer() {
+      let minutes = Math.floor(duration / 60);
+      let seconds = duration % 60;
+      timerDisplay.textContent = 
+        (minutes < 10 ? "0" : "") + minutes + ":" + 
+        (seconds < 10 ? "0" : "") + seconds;
+
+      if (duration > 0) {
+        duration--;
+      } else {
+        duration = 5 * 60;
+      }
+    }
+
+    setInterval(updateTimer, 1000);
+  </script>
+</body>
+</html>
